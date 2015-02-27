@@ -6,10 +6,18 @@
   </form>
 </div>
 
-<div class="beatMixer" ng-show="beats.length">
-  <h3>Available Beats:</h3>
+<div id="beatMixer" ng-show="beats.length > 1">
+  <h4>Search Beats?</h4>
+  <form>
+    <input ng-model="query" type="text">
+  </form>
+</div>
+
+<div class="beatBox" ng-show="beats.length">
+  <h3 ng-show="beats.length && filtered.length">Available Beats:</h3>
+  <h3 ng-show="beats.length && !filtered.length">Sorry, I Don't Know That Ditty</h3>
   <ul>
-    <li ng-repeat="item in beats">
+    <li ng-repeat="item in filtered = (beats | filter:query)">
       <a ui-sref="beats.reporters({ beatId: item.id})">{{item.name}}</a>
     </li>
   </ul>
