@@ -1,0 +1,14 @@
+<div class="beatMaker">
+  <h2>Drop a New Beat</h2>
+  <form ng-submit="BeatsFactory.addBeat()">
+    <input type="text" ng-model="BeatsFactory.beatName">
+    <button type="submit">Let's Move!</button>
+  </form>
+</div>
+
+<div class="beatMixer" ng-show="beats.length">
+  <h3>Available Beats:</h3>
+  <ul>
+    <li ng-repeat="item in beats">{{item.name}}</li>
+  </ul>
+</div>
