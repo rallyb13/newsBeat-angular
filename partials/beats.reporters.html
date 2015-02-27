@@ -1,4 +1,4 @@
-<div class="reporterMaker">
+<div class="reporterMaker well">
   <h2>Assign a Reporter to Cover {{beat.name}}</h2>
   <form ng-submit="addReporter()">
 
@@ -17,17 +17,17 @@
       <input id="birthday" ng-model="reporterBirthday">
     </div>
 
-    <button type="submit" class="btn btn-warning">Move it, Ace!</button>
+    <button type="submit" class="btn">Move it, Ace!</button>
 
   </form>
 </div>
 
-<div class="reporterBox" ng-show="beat.reporters.length">
+<div class="reporterBox well" ng-show="beat.reporters.length">
   <h2> {{beat.name}} Reporters: </h2>
   <ul>
     <li ng-repeat="item in beat.reporters">
       <span ng-click="thisReporter = true">{{item.name}}</span>
-      <span ng-click="thisReporter = false" ng-show="thisReporter">:  {{item.years}} at the paper, birthday: {{item.birthday}}</span>
+      <span ng-click="thisReporter = false" ng-show="thisReporter">:  {{item.years}} at the paper, born: {{item.birthday}}</span>
     </li>
   </ul>
 

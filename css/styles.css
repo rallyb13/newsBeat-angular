@@ -1,0 +1,56 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background-image: url(paperTexture.jpg);
+  font-family: times;
+}
+
+.beatMaker, .reporterMaker {
+  border-radius: 2em;
+  border-color: black;
+  min-height: 20em;
+  background-color: #FFC;
+}
+
+.beatMaker {
+  padding-top: 2.5em;
+}
+
+.beatMaker button{
+  margin: 1em 1em 0 0;
+}
+
+.beatMixer {
+  background-color: lightgray;
+  margin-bottom: 0;
+  border-color: maroon;
+  padding-top: 0.5em;
+}
+
+.beatBox, .reporterBox {
+  border-color: gray;
+  border-radius: 1em;
+  background-color: #E6E6B8;
+}
+
+li {
+  background-color: #FFC;
+  margin-top: 1.5px;
+}
+
+.btn {
+  background-color: #E6E6B8;
+  border-color: maroon;
+}
+
+a {
+  color: maroon;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
