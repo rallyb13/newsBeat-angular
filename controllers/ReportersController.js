@@ -6,6 +6,7 @@ newsBeat.controller('ReportersCtrl', function ReportersCtrl($scope, $stateParams
                                   birthday: $scope.reporterBirthday
                                   // id: $scope.beat.reporters.length + 1
     });
+    console.log("Hi there!")
     $scope.reporterName = null;
     $scope.reporterYears = null;
     $scope.reporterBirthday = null;

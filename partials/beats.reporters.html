@@ -3,17 +3,17 @@
   <form ng-submit="addReporter()">
 
     <div class="form-group">
-      <label for="name">Who is this intrepid reporter?</label>
-      <input id="name" ng-model="reporterName">
+      <label for="name">Who is This Intrepid Reporter (TIR)?</label>
+      <input id="name" ng-model="reporterName" required>
     </div>
 
     <div class="form-group">
-      <label for="years">How long has she/he been at the paper?</label>
+      <label for="years">How long has TIR been at the paper?</label>
       <input id="years" ng-model="reporterYears">
     </div>
 
     <div class="form-group">
-      <label for="birthday">When was he/she born?</label>
+      <label for="birthday">When was TIR born?</label>
       <input id="birthday" ng-model="reporterBirthday">
     </div>
 
@@ -27,11 +27,9 @@
   <ul>
     <li ng-repeat="item in beat.reporters">
       <span ng-click="thisReporter = true">{{item.name}}</span>
+      <span ng-click="thisReporter = false" ng-show="thisReporter">:  {{item.years}} at the paper, birthday: {{item.birthday}}</span>
     </li>
   </ul>
 
-  <p ng-show="thisReporter">SOMETHING APPEARS!
-    {{item.name}} {{item.years}} {{item.birthday}}
-  </p>
 
 </div>

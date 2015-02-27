@@ -4,6 +4,8 @@ On the Beat: an angular JS website for news agencies.
 
 OtB allows the assignment editor to keep track of the separate news "beats"
 (e.g.: local, political, delicious) and assign reporters to them.
+These beats can be filtered, so as to make handing out assignments easier
+once the list of beats gets long.
 It further allows for storing information about specific reporters
 (e.g: name, how long they've been at the paper, and birthday).
 
