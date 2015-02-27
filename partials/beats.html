@@ -21,7 +21,8 @@
       <h3 ng-show="beats.length && !filtered.length">Sorry, I Don't Know That Ditty</h3>
       <ul>
         <li ng-repeat="item in filtered = (beats | filter:query)">
-          <a ui-sref="beats.reporters({ beatId: item.id})">{{item.name}}</a>
+          <a ui-sref="beats.reporters({ beatId: item.id})">{{item.name}} </a>
+          <a id="deleteIt" ng-click="BeatsFactory.deleteBeat(item)"> (delete?)</a>
         </li>
       </ul>
     </div>

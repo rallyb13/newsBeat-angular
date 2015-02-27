@@ -54,3 +54,12 @@ a:hover {
   text-decoration: none;
   color: black;
 }
+
+#deleteIt {
+  color: red;
+}
+
+#deleteIt:hover {
+  cursor: pointer;
+  color: purple;
+}
