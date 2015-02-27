@@ -1,0 +1,27 @@
+<div class="reporterMaker">
+  <h2>Assign a Reporter to {{beat.name}}</h2>
+  <form ng-submit="addReporter()">
+
+    <div class="form-group">
+      <label for="name">Who is this intrepid reporter?</label>
+      <input id="name" ng-model="reporterName">
+    </div>
+
+    <div class="form-group">
+      <label for="years">How long has she/he been at the paper?</label>
+      <input id="years" ng-model="reporterYears">
+    </div>
+
+    <div class="form-group">
+      <label for="birthday">When was he/she born?</label>
+      <input id="birthday" ng-model="reporterBirthday">
+    </div>
+
+    <button type="submit" class="btn btn-warning">Move it, Ace!</button>
+
+  </form>
+</div>
+
+<div class="reporterBox" ng-show="beat.reporters.length">
+  <h2> {{beat.name}} Reporters: </h2>
+</div>

@@ -7,8 +7,14 @@ newsBeat.config(function($stateProvider) {
   });
 
   $stateProvider.state('beats', {
-    url: "beats",
+    url: "/beats",
     templateUrl: "partials/beats.html",
     controller: "BeatsCtrl"
+  });
+
+  $stateProvider.state('beats.reporters', {
+    url: "/:beatId",
+    templateUrl: "partials/beats.reporters.html",
+    controller: "ReportersCtrl"
   });
 });
